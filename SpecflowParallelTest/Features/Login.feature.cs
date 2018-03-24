@@ -90,6 +90,25 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Negative test login user as non-admin user")]
+        public virtual void NegativeTestLoginUserAsNon_AdminUser()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Negative test login user as non-admin user", ((string[])(null)));
+#line 15
+ this.ScenarioSetup(scenarioInfo);
+#line 16
+      testRunner.Given("I navigate to website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+   testRunner.And("I enter username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+   testRunner.Then("I enter password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 19
+   testRunner.Then("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

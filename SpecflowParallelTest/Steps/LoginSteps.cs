@@ -59,6 +59,36 @@ namespace SpecflowParallelTest.Steps
             });
         }
 
+    
+        [Given(@"I navigate to website")]
+        public void GivenINavigateToWebsite()
+        {
+            _driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
+        }
+
+        [Given(@"I enter username")]
+        public void GivenIEnterUsername()
+        {
+            var element = _driver.FindElement(By.Name("UserName"));
+            element.SendKeys("admin");
+        }
+
+        [Then(@"I enter password")]
+        public void ThenIEnterPassword()
+        {
+            var element = _driver.FindElement(By.Name("Password"));
+            element.SendKeys("admin");
+        }
+
+        [Then(@"I click login button")]
+        public void ThenIClickLoginButton()
+        {
+            var element = _driver.FindElement(By.Name("Login"));
+            element.Click();
+            Thread.Sleep(5000);
+     
+        }
+
 
     }
 }
