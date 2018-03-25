@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\SubMenuOption.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubMenuOption.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\TestingUserForm.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,6 +99,7 @@
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\LoginSteps.cs" />
+    <Compile Include="Steps\SubMenuOptionSteps.cs" />
     <Compile Include="Steps\TestingUserFormSteps.cs" />
     <Compile Include="Steps\UserFormSteps.cs" />
   </ItemGroup>
@@ -102,6 +108,10 @@
     <None Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SubMenuOption.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SubMenuOption.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\TestingUserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
