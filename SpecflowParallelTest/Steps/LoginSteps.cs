@@ -84,8 +84,8 @@ namespace SpecflowParallelTest.Steps
         public void ThenIClickLoginButton()
         {
             var element = _driver.FindElement(By.Name("Login"));
-            element.Click();
-            Thread.Sleep(5000);
+            element.Submit();
+            //Thread.Sleep(5000);
      
         }
 

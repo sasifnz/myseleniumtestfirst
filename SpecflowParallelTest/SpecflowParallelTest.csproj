@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\TestingUserForm.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestingUserForm.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\UserForm.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,6 +94,7 @@
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\LoginSteps.cs" />
+    <Compile Include="Steps\TestingUserFormSteps.cs" />
     <Compile Include="Steps\UserFormSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +102,10 @@
     <None Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\TestingUserForm.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TestingUserForm.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\UserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
