@@ -17,3 +17,4 @@ Scenario: DatInput
 	And select Gender
 	And select Language
 	And click Save button
+	And verify the input data

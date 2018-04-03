@@ -10,20 +10,20 @@ namespace SpecflowParallelTest
 {
     public static class SeleniumGetMethods
     {
-        public static string GetText(IWebDriver driver, string element, string elementtype)
+        public static string GetText(IWebDriver driver, string element, string findBy)
         {
-            if (elementtype == "Id")
+            if (findBy == "Id")
                 return driver.FindElement(By.Id(element)).GetAttribute("value");
-            if (elementtype == "Name")
+            if (findBy == "Name")
                 return driver.FindElement(By.Name(element)).GetAttribute("value");
             else return String.Empty;
         }
 
-        public static string GetTextFromDDL(IWebDriver driver, string element, string elementtype)
+        public static string GetTextFromDDL(IWebDriver driver, string element, string findBy)
         {
-            if (elementtype == "Id")
+            if (findBy == "Id")
                 return new SelectElement(driver.FindElement(By.Id(element))).AllSelectedOptions.SingleOrDefault().Text;
-            if (elementtype == "Name")
+            if (findBy == "Name")
                 return new SelectElement(driver.FindElement(By.Name(element))).AllSelectedOptions.SingleOrDefault().Text;
             else return String.Empty;
         }

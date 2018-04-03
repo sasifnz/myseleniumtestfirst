@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Threading;
 using TechTalk.SpecFlow;
@@ -63,5 +64,35 @@ namespace SpecflowParallelTest
             var selectElement = _driver.FindElement(By.Name("Save"));
             selectElement.Click();
         }
+        [Then(@"verify the input data")]
+        public void ThenVerifyTheInputData()
+        {
+          //  var InitialElement = _driver.FindElement(By.Id("Initia"));
+
+           var titleValue = SeleniumGetMethods.GetTextFromDDL(_driver, "TitleId", "Id");
+           // Console.WriteLine(titleValue);
+            Assert.AreEqual("Mr.", titleValue);
+
+            var InitialValue = SeleniumGetMethods.GetText(_driver, "Initial", "Id");
+          //  Console.WriteLine(InitialValue);
+            Assert.AreEqual("SA", InitialValue);
+
+            var name = SeleniumGetMethods.GetText(_driver, "FirstName", "Id");
+           // Console.WriteLine(name);
+            Assert.AreEqual("Asif", name);
+
+            var middlename = SeleniumGetMethods.GetText(_driver, "MiddleName", "Id");
+           // Console.WriteLine(middlename);
+            Assert.AreEqual("SD", middlename);
+
+            var gender = SeleniumGetMethods.GetText(_driver, "Male", "Name");
+           // Console.WriteLine(gender);
+            Assert.AreEqual("male", gender);
+
+            var language = SeleniumGetMethods.GetText(_driver, "Hindi", "Name");
+           // Console.WriteLine(language);
+            Assert.AreEqual("hindi", language);
+        }
+
     }
 }
