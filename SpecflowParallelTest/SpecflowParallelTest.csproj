@@ -76,6 +76,21 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Features\AlertWindow.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlertWindow.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Checkthelabels.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Checkthelabels.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\windowpopup.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>windowpopup.feature</DependentUpon>
+    </Compile>
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="SeleniumSetMethods.cs" />
     <Compile Include="DataInputSteps.cs" />
@@ -88,11 +103,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\Check the labels.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Check the labels.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\SubMenuOption.feature.cs">
       <AutoGen>True</AutoGen>
@@ -111,14 +121,20 @@
     </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\AlertWindow.cs" />
     <Compile Include="Steps\Checklabels.cs" />
     <Compile Include="Steps\LoginSteps.cs" />
+    <Compile Include="Steps\popupwindow.cs" />
     <Compile Include="Steps\SubMenuOptionSteps.cs" />
     <Compile Include="Steps\TestingUserFormSteps.cs" />
     <Compile Include="Steps\UserFormSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\AlertWindow.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AlertWindow.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\DataInput.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DataInput.feature.cs</LastGenOutput>
@@ -127,9 +143,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Check the labels.feature">
+    <None Include="Features\Checkthelabels.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Check the labels.feature.cs</LastGenOutput>
+      <LastGenOutput>Checkthelabels.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\SubMenuOption.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -142,6 +158,10 @@
     <None Include="Features\UserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>UserForm.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\windowpopup.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>windowpopup.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

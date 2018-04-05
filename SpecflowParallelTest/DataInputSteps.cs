@@ -10,8 +10,7 @@ namespace SpecflowParallelTest
     public class DataInputSteps
     {
         private IWebDriver _driver;
-        private object data;
-
+    
         public  DataInputSteps(IWebDriver driver)
         {
             _driver = driver;
