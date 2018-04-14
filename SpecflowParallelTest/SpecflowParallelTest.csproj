@@ -86,6 +86,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Checkthelabels.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\DataInputforPopup.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataInputforPopup.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\TFlightlogin.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TFlightlogin.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\windowpopup.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,7 +103,8 @@
     </Compile>
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="SeleniumSetMethods.cs" />
-    <Compile Include="DataInputSteps.cs" />
+    <Compile Include="Steps\DataInputforPopupSteps.cs" />
+    <Compile Include="Steps\DataInputSteps.cs" />
     <Compile Include="Features\DataInput.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +150,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DataInput.feature.cs</LastGenOutput>
     </None>
+    <None Include="Features\DataInputforPopup.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataInputforPopup.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
@@ -154,6 +169,10 @@
     <None Include="Features\TestingUserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TestingUserForm.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\TFlightlogin.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TFlightlogin.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\UserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

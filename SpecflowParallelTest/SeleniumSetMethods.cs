@@ -19,6 +19,11 @@ namespace SpecflowParallelTest
                 driver.FindElement(By.Name(element)).SendKeys(value);
         }
 
+        internal static void SelectTitle(IWebDriver driver, string v1, string v2, string v3)
+        {
+            throw new NotImplementedException();
+        }
+
         //Click into a button, Checkbox, option etc
         public static void Click(IWebDriver driver, string element, string elementtype)
         {
