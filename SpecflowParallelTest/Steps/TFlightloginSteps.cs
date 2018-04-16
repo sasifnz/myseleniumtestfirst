@@ -79,7 +79,10 @@ namespace SpecflowParallelTest.Steps
         {
             dynamic data = table.CreateDynamicInstance();
             _driver.FindElement(By.Id("email")).SendKeys((String)data.Emailaddress);
-            _driver.FindElement(By.Id("phone")).SendKeys(("0123456789"));
+            // converting Int to string -- concept in c# is called as boxing & un-boxing
+            _driver.FindElement(By.Id("phone")).SendKeys(Convert.ToString(data.ContactNumber));
+            // for passing integer as constant value
+            //_driver.FindElement(By.Id("phone")).SendKeys(("0123456789"));
             Thread.Sleep(2000);
         }
 
