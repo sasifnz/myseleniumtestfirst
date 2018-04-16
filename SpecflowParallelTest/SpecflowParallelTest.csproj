@@ -138,6 +138,7 @@
     <Compile Include="Steps\popupwindow.cs" />
     <Compile Include="Steps\SubMenuOptionSteps.cs" />
     <Compile Include="Steps\TestingUserFormSteps.cs" />
+    <Compile Include="Steps\TFlightloginSteps.cs" />
     <Compile Include="Steps\UserFormSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +184,9 @@
       <LastGenOutput>windowpopup.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

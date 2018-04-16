@@ -1,0 +1,48 @@
+﻿
+Finding elements via selector
+ 1. Classes -> Always use . notation infront of class name
+	for example
+		<div class="form-high brand-bg-no-before">
+	cssSelector = ".form-high" 
+ 
+	Find class by parent div element with child element. 
+	 <div class="form-high brand-bg-no-before">
+		 <div class="push-z"
+		</div>
+	</div>
+	 cssSelector = ".form-high .push-z"
+ 
+	Find multiple class on the same line
+	 <div class="form-high brand-bg-no-before">
+		 <div class="push-z">
+		</div>
+	</div>
+	 cssSelector = ".form-high.brand-bg-no-before"
+
+ 
+ 
+2. For Id's for finding  id = "signin"   ---> css selector = "#signin"
+ <div id="signin">
+	 <div class="push-z">
+	</div>
+</div>
+css => "#signin" 
+
+
+3. For elements <span>  --> css selector = "span". 
+ <div id="signin">
+	 <span class="push-z">
+	</span>
+</div>
+--> css selector = "span"
+
+4. For finding attrbutes <a href="#" target="new-form" /> 
+<div id="signin">
+	 <a href="#" target="new-form" /> 
+	</span>
+</div>
+
+CSS --> selector is  "a[target='new-form']"
+		
+5. Kill chrome driver using console window
+taskkill /im chromedriver.exe /f
