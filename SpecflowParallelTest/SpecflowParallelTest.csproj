@@ -76,51 +76,71 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Features\AlertWindow.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\AlertWindow.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AlertWindow.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\Checkthelabels.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\Checkthelabels.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Checkthelabels.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\DataInputforPopup.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\DataInputforPopup.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataInputforPopup.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\TFlightlogin.feature.cs">
+    <Compile Include="Features\SoundsAir\Onewayflight.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Onewayflight.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SoundsAir\SearchFlightbyEnteringvalues.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchFlightbyEnteringvalues.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SoundsAir\Searchflights.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Searchflights.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SoundsAir\TFlightlogin.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TFlightlogin.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\windowpopup.feature.cs">
+    <Compile Include="Features\SoundsAir\TravelflightSearch.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelflightSearch.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ExecuteAutoDemosite\windowpopup.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>windowpopup.feature</DependentUpon>
     </Compile>
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="SeleniumSetMethods.cs" />
-    <Compile Include="Steps\DataInputforPopupSteps.cs" />
-    <Compile Include="Steps\DataInputSteps.cs" />
-    <Compile Include="Features\DataInput.feature.cs">
+    <Compile Include="Steps\ExecuteAutpDemosite\DataInputforPopupSteps.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\DataInputSteps.cs" />
+    <Compile Include="Features\ExecuteAutoDemosite\DataInput.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataInput.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\Login.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\Login.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\SubMenuOption.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\SubMenuOption.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SubMenuOption.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\TestingUserForm.feature.cs">
+    <Compile Include="Features\ExecuteAutoDemosite\TestingUserForm.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestingUserForm.feature</DependentUpon>
@@ -132,54 +152,74 @@
     </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\AlertWindow.cs" />
-    <Compile Include="Steps\Checklabels.cs" />
-    <Compile Include="Steps\LoginSteps.cs" />
-    <Compile Include="Steps\popupwindow.cs" />
-    <Compile Include="Steps\SubMenuOptionSteps.cs" />
-    <Compile Include="Steps\TestingUserFormSteps.cs" />
-    <Compile Include="Steps\TFlightloginSteps.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\AlertWindow.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\Checklabels.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\LoginSteps.cs" />
+    <Compile Include="Steps\SoundsAir\OnewayflightSteps.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\popupwindow.cs" />
+    <Compile Include="Steps\SoundsAir\SearchFlightbyEnteringvaluesSteps.cs" />
+    <Compile Include="Steps\SoundsAir\SearchflightSteps.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\SubMenuOptionSteps.cs" />
+    <Compile Include="Steps\ExecuteAutpDemosite\TestingUserFormSteps.cs" />
+    <Compile Include="Steps\SoundsAir\TFlightloginSteps.cs" />
+    <Compile Include="Steps\SoundsAir\TravelflightSearchSteps.cs" />
     <Compile Include="Steps\UserFormSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Features\AlertWindow.feature">
+    <None Include="Features\ExecuteAutoDemosite\AlertWindow.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AlertWindow.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\DataInput.feature">
+    <None Include="Features\ExecuteAutoDemosite\DataInput.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DataInput.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\DataInputforPopup.feature">
+    <None Include="Features\ExecuteAutoDemosite\DataInputforPopup.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DataInputforPopup.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Login.feature">
+    <None Include="Features\ExecuteAutoDemosite\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Checkthelabels.feature">
+    <None Include="Features\ExecuteAutoDemosite\Checkthelabels.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Checkthelabels.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\SubMenuOption.feature">
+    <None Include="Features\SoundsAir\Onewayflight.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Onewayflight.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SoundsAir\SearchFlightbyEnteringvalues.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchFlightbyEnteringvalues.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SoundsAir\Searchflights.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Searchflights.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ExecuteAutoDemosite\SubMenuOption.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SubMenuOption.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\TestingUserForm.feature">
+    <None Include="Features\ExecuteAutoDemosite\TestingUserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TestingUserForm.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\TFlightlogin.feature">
+    <None Include="Features\SoundsAir\TFlightlogin.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TFlightlogin.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SoundsAir\TravelflightSearch.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TravelflightSearch.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\UserForm.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>UserForm.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\windowpopup.feature">
+    <None Include="Features\ExecuteAutoDemosite\windowpopup.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>windowpopup.feature.cs</LastGenOutput>
     </None>
@@ -188,6 +228,7 @@
   <ItemGroup>
     <Content Include="TextFile1.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -108,13 +108,6 @@ namespace SpecflowParallelTest.Steps
         {
             //var signup = _driver.FindElement(By.CssSelector(".form-group .form-control"));
             var signup = _driver.FindElement(By.CssSelector(".form-group button"));
-
-            //"form-control.btn-secondary.btn-labeled.btn-block.btn.labled-lg"));
-            //WebElement click = _driver.FindElement(By.XPath("//button[contains(text(),'signup')]"));
-            //click.click();
-            //var signup = _driver.FindElement(By.ClassName
-            //("btn - label"));
-
             signup.Submit();
             Thread.Sleep(2000);
         }

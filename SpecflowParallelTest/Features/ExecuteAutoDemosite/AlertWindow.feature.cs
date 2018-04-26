@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowParallelTest.Features
+namespace SpecflowParallelTest.Features.ExecuteAutoDemosite
 {
     using TechTalk.SpecFlow;
     
@@ -18,20 +18,21 @@ namespace SpecflowParallelTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("AlertWindow")]
+    public partial class AlertWindowFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Login.feature"
+#line 1 "AlertWindow.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tCheck if login functionality works", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AlertWindow", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
+                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,16 +65,16 @@ namespace SpecflowParallelTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login user as Administrator")]
+        [NUnit.Framework.DescriptionAttribute("Alertwindow")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void LoginUserAsAdministrator()
+        public virtual void Alertwindow()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login user as Administrator", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alertwindow", new string[] {
                         "mytag"});
-#line 6
-this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("I navigate to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
+#line 8
+testRunner.Given("I navigate to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "UserName",
@@ -81,31 +82,16 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "admin",
                         "admin"});
-#line 8
+#line 9
  testRunner.And("I enter username and password", ((string)(null)), table1, "And ");
-#line 11
- testRunner.And("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.Then("I should see user logged in to the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Negative test login user as non-admin user")]
-        public virtual void NegativeTestLoginUserAsNon_AdminUser()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Negative test login user as non-admin user", ((string[])(null)));
+ testRunner.And("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.And("I click Generate button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 14
+ testRunner.Then("open the alert window", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 15
- this.ScenarioSetup(scenarioInfo);
-#line 16
-      testRunner.Given("I navigate to website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
-   testRunner.And("I enter username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
-   testRunner.Then("I enter password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
-   testRunner.Then("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Dismiss the alert window", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

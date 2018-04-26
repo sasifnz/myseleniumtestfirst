@@ -16,8 +16,12 @@ namespace SpecflowParallelTest
                 return driver.FindElement(By.Id(element)).GetAttribute("value");
             if (findBy == "Name")
                 return driver.FindElement(By.Name(element)).GetAttribute("value");
+            if (findBy == "cssselector")
+                return driver.FindElement(By.CssSelector(element)).GetAttribute("value");
             else return String.Empty;
         }
+
+        
 
         public static string GetTextFromDDL(IWebDriver driver, string element, string findBy)
         {
