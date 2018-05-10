@@ -40,6 +40,10 @@ namespace SpecflowParallelTest
                 new SelectElement(driver.FindElement(By.Id(element))).SelectByText(value);
             if (elementtype == "Name")
                 new SelectElement(driver.FindElement(By.Name(element))).SelectByText(value);
+            if (elementtype == "Class")
+                new SelectElement(driver.FindElement(By.ClassName(element))).SelectByText(value);
+            if (elementtype == "CssSelector")
+                new SelectElement(driver.FindElement(By.CssSelector(element))).SelectByText(value);
         }
 
     }

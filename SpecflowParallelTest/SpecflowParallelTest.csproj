@@ -91,6 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataInputforPopup.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\SoundsAir\Bookingflight.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bookingflight.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\SoundsAir\Onewayflight.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,6 +160,7 @@
     <Compile Include="Steps\ExecuteAutpDemosite\AlertWindow.cs" />
     <Compile Include="Steps\ExecuteAutpDemosite\Checklabels.cs" />
     <Compile Include="Steps\ExecuteAutpDemosite\LoginSteps.cs" />
+    <Compile Include="Steps\SoundsAir\BookingflightSteps.cs" />
     <Compile Include="Steps\SoundsAir\OnewayflightSteps.cs" />
     <Compile Include="Steps\ExecuteAutpDemosite\popupwindow.cs" />
     <Compile Include="Steps\SoundsAir\SearchFlightbyEnteringvaluesSteps.cs" />
@@ -186,6 +192,10 @@
     <None Include="Features\ExecuteAutoDemosite\Checkthelabels.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Checkthelabels.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SoundsAir\Bookingflight.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Bookingflight.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\SoundsAir\Onewayflight.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

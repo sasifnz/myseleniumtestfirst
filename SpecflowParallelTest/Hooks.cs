@@ -40,6 +40,7 @@ namespace SpecflowParallelTest
                 case BrowserType.Chrome:
                     ChromeOptions option = new ChromeOptions();
                     //option.AddArgument("--headless");
+                    option.AddArgument("--start-maximized");
                     _driver = new ChromeDriver(option);
                     _objectContainer.RegisterInstanceAs<IWebDriver>(_driver);
                     break;
